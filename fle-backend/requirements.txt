@@ -10,4 +10,5 @@ sentence-transformers
 faiss-cpu
 youtube-search-python
 streamlit
+python-multipart
 
