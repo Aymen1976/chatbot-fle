@@ -118,9 +118,6 @@ async def analyze_file(file: UploadFile = File(...)):
     except Exception as e:
         print("❌ ERREUR ANALYSE FICHIER:", str(e))
         return {"error": str(e)}
-from fastapi import FastAPI
-
-app = FastAPI()
 
 @app.get("/")
 async def root():

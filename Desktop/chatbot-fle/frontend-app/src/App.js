@@ -43,7 +43,8 @@ function App() {
     setInput("");
 
     try {
-      const res = await axios.post("https://chatbot-fle.onrender.com", {
+      const res = await axios.post("https://chatbot-fle.onrender.com/chat", {
+
         message: input,
         fileContent: fileContent,
         history: updatedMessages,
@@ -67,7 +68,8 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
     try {
-      const res = await axios.post("http://localhost:8000/analyze", formData, {
+     const res = await axios.post("https://chatbot-fle.onrender.com/analyze", formData, {
+
         headers: { "Content-Type": "multipart/form-data" },
       });
       setFileContent(res.data.fileContent || "");
@@ -222,4 +224,3 @@ function App() {
 }
 
 export default App;
-
