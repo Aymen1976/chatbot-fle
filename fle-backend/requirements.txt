@@ -4,7 +4,7 @@ python-dotenv
 pydantic
 httpx
 groq
-fitz  # alias de PyMuPDF, installé avec pymupdf
+PyMuPDF
 pymupdf
 sentence-transformers
 faiss-cpu
